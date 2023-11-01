@@ -11,6 +11,7 @@
 <body>
     <header>
         <nav>
+            <input type="text" id="filename" placeholder="File Name">
             <input onchage="ChangeFontSize()" type="number" id="font-size">
             <!-- <button onclick="test()" id="test">*</button> -->
             <div class="text-aling">
@@ -22,7 +23,7 @@
                 <i class="bi bi-box-arrow-down"></i>
                 <div class="export-content">
                     <button href="#">Export as .txt</button>
-                    <button href="#">Export as .md</button>
+                    <button href="#">Export as .pdf</button>
                 </div>
             </div>
             <button onclick="SwitchTheme()" class="light-dark"><img src="img/sol.png"></button>
@@ -33,9 +34,9 @@
             <button onclick="OpenTab()" class="add-botton"><i class="bi bi-plus"></i></button>
         </div>
         <div class="sheet">
-            <textarea name="text" placeholder="Type your text"></textarea>
+            <textarea name="text" placeholder="Type your text" id="text"></textarea>
         </div>
     </main>
     <script src="script.js"></script>
 </body>
-</html>
+</html> 

@@ -42,7 +42,16 @@ nav{
     transition: 300ms;
 }
 
-nav input{
+nav #filename{
+    border-style: none;
+    background-color: var(--light);
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+nav #font-size{
     border-style: none;
     background-color: var(--light);
     border-radius: 10px;
