@@ -6,6 +6,7 @@
     --light: #F1EDE4;
     --blue: #363E59;
     --dark: #171A26;
+    --buttons-color: #171A26;
     --font-size: 16px;
 }
 
@@ -62,11 +63,21 @@ nav button:hover{
     border-radius: 10px;
 }
 
+.but-nav{
+    width: 40px;
+}
+
+.bi{
+    font-size: 24px;
+    color: var(--buttons-color);
+}
+
 .export{
     position: relative;
     display: inline-block;
     padding: 2px 5px;
     border-radius: 10px 10px 0 0;
+    width: 25pxpx;
 }
 
 .export-content{
@@ -132,6 +143,21 @@ main{
     background-color: var(--itens-color);
     padding: 5px;
     border-radius: 10px;
+}
+
+.add-botton{
+    border-style: none;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-botton:hover{
+    background-color: var(--bg-color);
 }
 
 /* Folha para digitar */

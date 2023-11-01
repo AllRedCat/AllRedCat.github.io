@@ -26,7 +26,8 @@ function ChangeFontSize(){
     var FontChange = getPropertyValue(Font);
     var FontSize = getComputedStyle(Root);
     FontSize.style.setProperty('--font-size', 'Font');
-    function test(){
-        alert(FontChange);
-    }
+}
+
+function test(){
+    alert(FontChange);
 }
