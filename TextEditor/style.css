@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap');
+
+/* :root{
+    --sepia: #C5B896;
+    --sepia-lite: #DAD2BC;
+    --light: #F1EDE4;
+    --blue: #505B84;
+    --dark: #171A26;
+} */
+
+:root{
+    --bg-color: #C5B896;
+    --itens-color: #DAD2BC;
+    --light: #F1EDE4;
+    /* --blue: #505B84;
+    --dark: #171A26; */
+}
+
+*{
+    font-family: 'Dosis', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    background-color: var(--bg-color);
+}
+
+/* cabeçalho */
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: var(--itens-color);
+    border-radius: 15px;
+}
+
+nav input{
+    border-style: none;
+    background-color: var(--light);
+    border-radius: 10px;
+    width: 40px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+nav input:focus{
+    outline: none;
+}
+
+nav button{
+    border-style: none;
+    background-color: transparent;
+    padding-top: 5px    ;
+}
+
+nav button:hover{
+    background-color: var(--bg-color);
+    border-radius: 10px;
+}
+
+.export{
+    position: relative;
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 10px 10px 0 0;
+}
+
+.export-content{
+    display: none;
+    position: absolute;
+    width: max-content;
+    padding: 15px;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px gray;
+    right: -35px;
+    z-index: 1;
+}
+
+.export-content button{
+    color: var(--dark);
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.export:hover{
+    background-color: var(--bg-color);
+}
+
+.export:hover .export-content{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.export-content button:hover{
+    color: var(--blue);
+}
+
+img{
+    width: 30px;
+}
+
+.text-aling{
+    display: flex;
+}
+
+/* conteudo */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sheet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sheet textarea{
+    background-color: var(--itens-color);
+    border-style: none;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.sheet textarea:focus{
+    outline: none;
+}

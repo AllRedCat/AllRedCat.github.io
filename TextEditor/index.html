@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Text Editor | RedCat</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="number" id="font-size">
+            <div class="text-aling">
+                <button><img src="img/cardapio-left.png"></button>
+                <button><img src="img/cardapio.png"></button>
+                <button><img src="img/cardapio-right.png"></button>
+            </div>
+            <div class="export">
+                <img src="img/compartilhar.png">
+                <div class="export-content">
+                    <button href="#">Export as .txt</button>
+                    <button href="#">Export as .md</button>
+                </div>
+            </div>
+            <button onclick="SwitchTheme()" class="light-dark"><img src="img/sol.png"></button>
+        </nav>
+    </header>
+    <main>
+        <div class="sheet">
+            <textarea name="text" cols="100" rows="22" placeholder="Type your text"></textarea>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
