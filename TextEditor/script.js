@@ -1,13 +1,14 @@
-var DarkTheme = document.querySelector(':root');
+var Root = document.querySelector(':root');
 var Tab = document.querySelector('textarea');
+var Font = document.querySelector('input');
 
 function SwitchTheme(){
-    var DarkThemeOn = getComputedStyle(DarkTheme);
+    var DarkThemeOn = getComputedStyle(Root);
     if(DarkThemeOn.getPropertyValue('--bg-color') === '#C5B896'){
-        DarkTheme.style.setProperty('--bg-color', '#363E59');
+        Root.style.setProperty('--bg-color', '#363E59');
     }
     else{
-        DarkTheme.style.setProperty('--bg-color', '#C5B896');
+        Root.style.setProperty('--bg-color', '#C5B896');
     }
 }
 
@@ -18,5 +19,14 @@ function OpenTab(){
     }
     else{
         Tab.style.setProperty('scale', '0');
+    }
+}
+
+function ChangeFontSize(){
+    var FontChange = getPropertyValue(Font);
+    var FontSize = getComputedStyle(Root);
+    FontSize.style.setProperty('--font-size', 'Font');
+    function test(){
+        alert(FontChange);
     }
 }

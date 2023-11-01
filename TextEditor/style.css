@@ -6,6 +6,7 @@
     --light: #F1EDE4;
     --blue: #363E59;
     --dark: #171A26;
+    --font-size: 16px;
 }
 
 *{
@@ -148,6 +149,7 @@ main{
     border-style: none;
     border-radius: 15px;
     padding: 25px;
+    font-size: var(--font-size);
     color: var(--dark);
     text-decoration: none;
     user-select: none;
