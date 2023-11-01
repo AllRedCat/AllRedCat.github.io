@@ -5,10 +5,16 @@ var Font = document.querySelector('input');
 function SwitchTheme(){
     var DarkThemeOn = getComputedStyle(Root);
     if(DarkThemeOn.getPropertyValue('--bg-color') === '#C5B896'){
-        Root.style.setProperty('--bg-color', '#363E59');
+        Root.style.setProperty('--bg-color', '#171A26');
+        Root.style.setProperty('--itens-color', '#363E59');
+        Root.style.setProperty('--buttons-color', '#C5B896');
+        Root.style.setProperty('--text-color', '#DAD2BC');
     }
     else{
         Root.style.setProperty('--bg-color', '#C5B896');
+        Root.style.setProperty('--itens-color', '#DAD2BC');
+        Root.style.setProperty('--buttons-color', '#171A26');
+        Root.style.setProperty('--text-color', '#171A26');
     }
 }
 
@@ -28,6 +34,6 @@ function ChangeFontSize(){
     FontSize.style.setProperty('--font-size', 'Font');
 }
 
-function test(){
-    alert(FontChange);
-}
+// function test(){
+//     alert(FontChange);
+// }
