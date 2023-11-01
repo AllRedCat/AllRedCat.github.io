@@ -107,7 +107,7 @@ main{
 }
 
 .illus img{
-    width: 400px;
+    width: 500px;
 }
 
 .illus a{
@@ -140,15 +140,21 @@ main{
     }
 
     .mobile-nav-toggle{
-        color: var(--main-darker-color);
         display: block;
         position: absolute;
         z-index: 9999;
         background: none;
         border: none;
-        width: 20px;
+        width: 40px;
         top: 2rem;
-        right: 4rem;
+        right: 3rem;
+    }
+    
+    .mobile-nav-toggle:active{
+        background-color: var(--main-darker-color);
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
     }
 
     .mobile-nav-toggle img{
