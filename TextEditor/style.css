@@ -1,19 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap');
 
-/* :root{
-    --sepia: #C5B896;
-    --sepia-lite: #DAD2BC;
-    --light: #F1EDE4;
-    --blue: #505B84;
-    --dark: #171A26;
-} */
-
 :root{
     --bg-color: #C5B896;
     --itens-color: #DAD2BC;
     --light: #F1EDE4;
-    /* --blue: #505B84;
-    --dark: #171A26; */
+    --blue: #363E59;
+    --dark: #171A26;
 }
 
 *{
@@ -119,15 +111,36 @@ img{
 /* conteudo */
 
 main{
-    display: flex;
+    display: grid;
+    grid-template-columns: 100%;
     justify-content: center;
-    align-items: center;
+    grid-gap: 1rem;
 }
+
+.get-start{
+    width: fit-content;
+    justify-self: center;
+}
+
+/* barra de navegação */
+
+.tabs-bar{
+    justify-self: center;
+    width: 68%;
+    height: 25px;
+    background-color: var(--itens-color);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* Folha para digitar */
 
 .sheet{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-self: center;
+    align-items: flex-start;
+    width:  70%;
+    height: 80vh;
 }
 
 .sheet textarea{
@@ -135,8 +148,21 @@ main{
     border-style: none;
     border-radius: 15px;
     padding: 25px;
+    color: var(--dark);
+    text-decoration: none;
+    user-select: none;
+    justify-self: flex-start;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    scale: 0;
+    transition-duration: 300ms;
+    transform-origin: 0% 0%;
 }
 
 .sheet textarea:focus{
     outline: none;
+    text-decoration: none;
 }
