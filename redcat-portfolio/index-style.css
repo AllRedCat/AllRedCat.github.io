@@ -21,13 +21,15 @@ body {
     padding: 0;
 }
 
+/* nav bar */
+
 .nav-bar-space {
     display: flex;
     justify-content: center;
     overflow: fixed;
     width: 100vw;
     height: 10rem;
-    padding: 1rem;
+    padding-top: 1rem;
 }
 
 .nav-bar {
@@ -81,12 +83,16 @@ body {
     width: 100%;
 }
 
+/* main context */
+
 main {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
 }
+
+/* apresentetion */
 
 .primal-space {
     display: block;
@@ -112,3 +118,4 @@ main {
     line-height: 34px;
     letter-spacing: 2px;
 }
+
