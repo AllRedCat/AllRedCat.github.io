@@ -70,14 +70,31 @@ header {
 
 .nav-links {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     align-items: center;
     width: fit-content;
 }
 
-.nav-links-li {
-    font-size: 24px;
+.nav-links-li a {
+    position: relative;
+    font-size: 20px;
 }
+
+.nav-links-li a::after {
+    content: "";
+    position: absolute;
+    background-color: var(--green);
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom: -4px;
+    transition: 200ms;
+}
+
+.nav-links-li a:hover::after {
+    width: 100%;
+}
+
 
 .link {
     color: var(--red);
