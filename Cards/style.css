@@ -23,37 +23,89 @@ body {
 header {
     width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+header a{
+    color: var(--green);
 }
 
 /* nav bar */
 
-nav {
-    width: 70%;
-    padding: 20px 0;
+/* header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+} */
+
+.brand-logo {
+    margin: 1rem 2rem;
 }
 
-.logo-space {
+.logo {
     font-family: 'Handjet', sans-serif;
-}
-.logo-space a{
     font-size: 28px;
+    font-weight: 300;
     color: var(--green);
+    background-color: transparent;
 }
 
-.nav-links {}
+.mobile-nav-toggle {
+    display: none;
+}
 
-.links-ul {
+.nav-links {
     display: flex;
     gap: 2rem;
+    margin: 1rem 0;
 }
 
-.links-li {}
-
-.links-li a {
-    font-size: 26px;
+.nav-links a {
     color: var(--green);
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .nav-links{
+        margin-top: 10px;
+        height: 140px;
+        border-radius: 35px;
+        border: 2px solid var(--green);
+        gap: 2rem;
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 30%;
+        background-color: rgba(124, 124, 124, 0.2);
+        backdrop-filter: blur(0.5rem);
+        flex-direction: column;
+        padding: min(30vh, 8rem) 4rem;
+        transform: translate(115%);
+        transition: transform 350ms ease-out;
+    }
+
+    .nav-links[data-visible="true"]{
+        transform: translate(70%);
+    }
+
+    .mobile-nav-toggle{
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background: none;
+        border: none;
+        width: 40px;
+        top: 2rem;
+        right: 4rem;
+    }
+
+    .mobile-nav-toggle:active{
+        background-color: var(--main-darker-color);
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .mobile-nav-toggle img{
+        width: 40px;
+    }
 }
