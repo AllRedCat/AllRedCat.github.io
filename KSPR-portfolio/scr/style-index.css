@@ -23,25 +23,21 @@ body {
 
 /* scrollbat style */
 
-/* width */
 ::-webkit-scrollbar {
     width: 8px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
     background: var(--black);
     border-radius: 10px;
     box-shadow: inset 0 0 5px grey;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: var(--green);
     border-radius: 6px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #10b46a;
 }
@@ -104,7 +100,6 @@ header {
 /* conteudo */
 
 main {
-    /* width: 100wv; */
     display: flex;
     justify-content: center;
 
@@ -121,14 +116,12 @@ main {
     padding: 10rem 0;
 }
 
-/* .name{} */
 .name-img {
     width: 200%;
 }
 
 .illustration {
     width: 100%;
-    /* background: radial-gradient(var(--blue)5%, transparent 60%); */
     background: radial-gradient(farthest-side at 45% 50%, var(--blue)8%, transparent 80%);
 }
 
@@ -144,4 +137,14 @@ iframe {
     width: 100%;
     height: 100%;
     border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+    .apresentation{
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .name-img{
+        width: 100%;
+    }
 }

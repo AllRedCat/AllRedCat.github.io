@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300;500&family=Inter+Tight:wght@300;500;700&display=swap');
+
+/* font-family: 'Handjet', sans-serif;
+font-family: 'Inter Tight', sans-serif; */
+
+:root {
+    --black: #1A1A1A;
+    --red: #F01C18;
+    --green: #18F587;
+}
+
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    background-color: var(--black);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header a{
+    color: var(--green);
+}
+
+/* nav bar */
+
+/* header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+.brand-logo {
+    margin: 1rem 2rem;
+}
+
+.logo {
+    font-family: 'Handjet', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    color: var(--green);
+    background-color: transparent;
+    margin-left: -2.5rem;
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    margin: 0rem 0;
+}
+
+.nav-links a {
+    color: var(--green);
+    font-size: 20px;
+}
+
+.close{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-links{
+        margin-top: 10px;
+        height: 140px;
+        border-radius: 35px;
+        border: 2px solid var(--green);
+        gap: 2rem;
+        position: fixed;
+        z-index: 2000;
+        inset: 0 0 0 30%;
+        background-color: rgba(124, 124, 124, 0.2);
+        backdrop-filter: blur(0.5rem);
+        flex-direction: column;
+        padding: min(30vh, 8rem) 4rem;
+        transform: translate(115%);
+        transition: transform 350ms ease-out;
+    }
+    
+    .nav-links .close{
+        display: block;
+        margin-top: -4rem;
+        margin-bottom: 4rem;
+    }
+
+    .nav-links[data-visible="true"]{
+        transform: translate(70%);
+    }
+
+    .mobile-nav-toggle{
+        display: block;
+        position: absolute;
+        z-index: 1000;
+        background: none;
+        border: none;
+        width: 40px;
+        top: 2rem;
+        right: 4rem;
+    }
+
+    .mobile-nav-toggle:active{
+        background-color: var(--main-darker-color);
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 450px){
+    .nav-links[data-visible="true"]{
+        transform: translate(50%);
+    }
+}
