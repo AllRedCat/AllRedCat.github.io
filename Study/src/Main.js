@@ -8,14 +8,16 @@ function Main() {
     return (
         <div className="main">
             <div className="container1">
-                <div className="CPU">
-                    <CPUview />
-                </div>
-                <div className="RAM">
-                    <RAMview />
-                </div>
-                <div>
-                    <SWAPview />
+                <div className="content">
+                    <div className="CPU">
+                        <CPUview />
+                    </div>
+                    <div className="RAN">
+                        <RAMview />
+                    </div>
+                    <div className="SWAP">
+                        <SWAPview />
+                    </div>
                 </div>
             </div>
         </div>

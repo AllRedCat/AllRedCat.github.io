@@ -48,3 +48,13 @@ button:hover{
 .bi{
     font-size: 26px;
 }
+
+@media (max-width: 668px){
+    p{
+        display: none;
+    }
+
+    button{
+        width: 46px;
+    }
+}

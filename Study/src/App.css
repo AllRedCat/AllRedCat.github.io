@@ -5,16 +5,16 @@
 .App {
   font-family: Arial, sans-serif;
   text-align: center;
+  background-color: #e6e6e6;
 }
 
 .container{
   display: flex;
   width: 100vw;
   height: 100vh;
-  background-color: #e6e6e6;
+  background-color: white;
 }
 
 h1{
   color: #1a1a1a;
 }
-
