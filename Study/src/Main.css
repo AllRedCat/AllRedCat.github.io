@@ -1,9 +1,16 @@
 .main{
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: start;
+    /* width: 100%;
+    height: 100%; */
+    padding: 12px;
+    display: block;
+    /* justify-content: flex-start; */
     gap: 2rem;
+}
+
+.container1{
+    width: min-content;
+    height: min-content;
+    display: flex;
+    padding: 2rem;
+    gap: 2.5rem;
 }
