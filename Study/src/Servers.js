@@ -7,3 +7,5 @@ function Servers() {
         </div>
     );
 }
+
+export default Servers;
