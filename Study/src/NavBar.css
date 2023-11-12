@@ -26,17 +26,23 @@ nav{
     flex-direction: column;
     align-items: start;
     text-align: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 button{
+    width: 140px;
     display: flex;
-    align-items: center;    
+    align-items: center;
     gap: 1rem;
     border-radius: 15px;
     border-style: none;
     background-color: transparent;
     font-size: 16px;
+    padding: 10px;
+}
+
+button:hover{
+    background-color: rgb(156, 156, 156);
 }
 
 .bi{
