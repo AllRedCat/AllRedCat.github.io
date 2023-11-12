@@ -1,8 +1,32 @@
 import React from "react";
 import './Main.css';
-import CPUview from './MainContent/CPUview.js';
-import RAMview from './MainContent/RAMview.js';
-import SWAPview from "./MainContent/SWAPview.js";
+import './MainContent/CPUview.css';
+import './MainContent/RAMview.css';
+import './MainContent/SWAPview.css';
+
+function CPUview() {
+    return (
+        <div className="CPU-view">
+            <h2>CPU</h2>
+        </div>
+    );
+}
+
+function RAMview() {
+    return (
+        <div className="RAM-view">
+            <h2>RAM</h2>
+        </div>
+    );
+}
+
+function SWAPview() {
+    return (
+        <div className="SWAP-view">
+            <h2>SWAP</h2>
+        </div>
+    );
+}
 
 function Main() {
     return (
