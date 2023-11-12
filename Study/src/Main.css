@@ -13,4 +13,9 @@
     display: flex;
     padding: 2rem;
     gap: 2.5rem;
+    min-width: 250px;
+    min-height: 280px;
+    box-shadow: 0 0 80px -25px;
+    border-radius: 25px;
+    padding: 1rem;
 }
