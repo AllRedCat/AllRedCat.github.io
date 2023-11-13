@@ -29,7 +29,8 @@ nav{
     gap: 1rem;
 }
 
-button{
+a{
+    color: black;
     width: 140px;
     display: flex;
     align-items: center;
@@ -41,7 +42,7 @@ button{
     padding: 10px;
 }
 
-button:hover{
+a:hover{
     background-color: rgb(156, 156, 156);
 }
 
