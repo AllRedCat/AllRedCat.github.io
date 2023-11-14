@@ -58,6 +58,8 @@ function App() {
     case "/about":
       content = <About />
       break;
+    default:
+      content = <Dashboard />
   }
 
   return (

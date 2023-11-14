@@ -55,7 +55,7 @@ a:hover{
         display: none;
     }
 
-    button{
-        width: 46px;
+    a{
+        width: 30px;
     }
 }
