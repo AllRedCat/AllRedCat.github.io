@@ -114,7 +114,7 @@ const RAMusage = () => {
             type: 'solid', // Set to 'solid' for a single color
             colors: ['#ED773B'], // Set the color you want here
         },
-        series: [79], // Your data series
+        series: [59], // Your data series
         labels: ['Usage'],
     };
 
