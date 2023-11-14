@@ -4,6 +4,7 @@
     display: block;
     /* justify-content: flex-start; */
     gap: 2rem;
+    margin: 0;
 }
 
 .container1 {
@@ -29,6 +30,11 @@
 }
 
 @media (max-width: 668px) {
+    .main{
+        padding: 0;
+        padding-top: 12px;
+    }
+
     .container1 {
         width: fit-content;
     }
