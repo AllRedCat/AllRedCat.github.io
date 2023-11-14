@@ -57,9 +57,9 @@ const CPUusage = () => {
     };
 
     return (
-        <div>
+        <div className="chart-container">
             {/* Render the ApexChart component for Gauge Chart */}
-            <Chart options={options} series={options.series} type="radialBar" height={250} />
+            <Chart options={options} series={options.series} type="radialBar" height="100%" />
         </div>
     );
 };
@@ -119,9 +119,9 @@ const RAMusage = () => {
     };
 
     return (
-        <div>
+        <div className="chart-container">
             {/* Render the ApexChart component for Gauge Chart */}
-            <Chart options={options} series={options.series} type="radialBar" height={250} />
+            <Chart options={options} series={options.series} type="radialBar" height="100%" />
         </div>
     );
 };
@@ -181,9 +181,9 @@ const SWAPusage = () => {
     };
 
     return (
-        <div>
+        <div className="chart-container">
             {/* Render the ApexChart component for Gauge Chart */}
-            <Chart options={options} series={options.series} type="radialBar" height={250} />
+            <Chart options={options} series={options.series} type="radialBar" height="100%" />
         </div>
     );
 };
