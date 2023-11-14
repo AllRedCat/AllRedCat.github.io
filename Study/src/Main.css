@@ -4,7 +4,6 @@
     display: block;
     /* justify-content: flex-start; */
     gap: 2rem;
-    margin: 0;
 }
 
 .container1 {
@@ -12,7 +11,7 @@
     height: 100%;
     min-width: 250px;
     min-height: 280px;
-    box-shadow: 0 0 80px -25px;
+    box-shadow: 0 0 80px -30px;
     border-radius: 25px;
     padding: 1rem;
 }
