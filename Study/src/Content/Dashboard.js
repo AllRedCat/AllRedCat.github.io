@@ -190,27 +190,33 @@ const SWAPusage = () => {
 
 function CPUview() {
     return (
-        <div className="CPU-view">
+        <div className="View">
             <h2>CPU</h2>
-            <CPUusage />
+            <div className="Porcent-graph">
+                <CPUusage />
+            </div>
         </div>
     );
 }
 
 function RAMview() {
     return (
-        <div className="RAM-view">
+        <div className="View">
             <h2>RAM</h2>
-            <RAMusage />
+            <div className="Porcent-graph">
+                <RAMusage />
+            </div>
         </div>
     );
 }
 
 function SWAPview() {
     return (
-        <div className="SWAP-view">
+        <div className="View">
             <h2>SWAP</h2>
-            <SWAPusage />
+            <div className="Porcent-graph">
+                <SWAPusage />
+            </div>
         </div>
     );
 }
