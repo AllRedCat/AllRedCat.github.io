@@ -1,9 +1,9 @@
 import './App.css';
 import './NavBar.css';
-import Dashboard from './Dashboard';
-import Servers from './Servers';
-import Github from './Github';
-import About from './About';
+import Dashboard from './Content/Dashboard';
+import Servers from './Content/Servers';
+import Github from './Content/Github';
+import About from './Content/About';
 
 function NavBar() {
 
