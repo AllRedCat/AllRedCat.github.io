@@ -1,8 +1,5 @@
 import React from "react";
 import './Main.css';
-import './MainContent/CPUview.css';
-import './MainContent/RAMview.css';
-import './MainContent/SWAPview.css';
 
 function CPUview() {
     return (
