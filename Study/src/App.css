@@ -23,3 +23,9 @@
 h1{
   color: #1a1a1a;
 }
+
+@media (max-width: 668px){
+  .container{
+    display: block;
+  }
+}
