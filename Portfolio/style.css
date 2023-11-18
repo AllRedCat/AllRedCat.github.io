@@ -45,7 +45,7 @@ ul li a {
     font-weight: 500;
 }
 
-/* apresentação */
+/* conteudo */
 
 main {
     display: block;
@@ -66,12 +66,14 @@ h5 {
     font-size: 16px;
 }
 
+/* parte de apresentação */
+
 .hi-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10rem;
-    margin: 10%;
+    margin: 10% 0;
 }
 
 .hi {}
@@ -111,4 +113,39 @@ h5 {
 
 .img-box {
     font-size: 300px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+} 
+
+/* sobre mim */
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    margin: 10% 0;
+    width: 100vw;
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10rem;
+    margin: 0;
+    padding: 10px 50px; */
+    padding: 10px 50px; */
+}
+
+/* .my-img-2 {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0;
+} */
+
+.about-text {
+    /* margin: 20px 0; */
+    width: 30%;
 }
