@@ -50,22 +50,28 @@ ul li a {
 main {
     display: block;
 }
-h2{
+
+h2 {
     margin: 0;
+    font-size: 38px;
 }
-h5{
+
+h4 {
     margin: 0;
-    /* line-height: 14px; */
+    font-size: 22px;
 }
-h4{
+
+h5 {
     margin: 0;
+    font-size: 16px;
 }
 
 .hi-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 10rem;
+    margin: 10%;
 }
 
 .hi {}
@@ -84,7 +90,7 @@ h4{
     justify-content: space-between;
 }
 
-.line{
+.line {
     position: relative;
     /* top: -8px; */
     background-color: var(--black);
