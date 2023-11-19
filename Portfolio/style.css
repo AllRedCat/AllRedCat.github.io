@@ -16,6 +16,8 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    background-color: #CCCCCC;
 }
 
 header {
@@ -30,15 +32,11 @@ header {
     font-size: 24px;
 }
 
-nav {}
-
 ul {
     display: flex;
     justify-content: space-evenly;
     gap: 1rem;
 }
-
-ul li {}
 
 ul li a {
     color: var(--black);
@@ -73,10 +71,8 @@ h5 {
     justify-content: center;
     align-items: center;
     gap: 10rem;
-    margin: 10% 0;
+    padding: 15% 0 21% 0;
 }
-
-.hi {}
 
 .redcat {
     width: 100%;
@@ -94,7 +90,6 @@ h5 {
 
 .line {
     position: relative;
-    /* top: -8px; */
     background-color: var(--black);
     height: 3px;
     width: 55%;
@@ -108,43 +103,31 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: aqua; */
 }
 
 .img-box {
     font-size: 300px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 } 
 
 /* sobre mim */
 
 .about-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
     gap: 10rem;
-    margin: 10% 0;
+    padding: 18% 0;
     width: 100vw;
-    /* display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10rem;
-    margin: 0;
-    padding: 10px 50px; */
+    background-color: #E6E6E6;
 }
 
-/* .my-img-2 {
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    margin: 0;
-} */
+.my-img-2{
+    justify-self: flex-end;
+}
 
-.about-text {
-    /* margin: 20px 0; */
+.about-text h4{
     width: 30%;
+    font-size: 16px;
+    margin: 20px 0;
 }
