@@ -6,6 +6,8 @@
     --red: #FF2E2E;
     --strong-orange: #FF5232;
     --light-blue: #5BFFB5;
+    --white: #E6E6E6;
+    --light-gray: #CCCCCC;
 }
 
 * {
@@ -18,7 +20,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: #CCCCCC;
+    background-color: var(--light-gray);
 }
 
 header {
@@ -119,7 +121,7 @@ h5 {
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    background-color: #E6E6E6;
+    background-color: var(--white);
 }
 
 .about {
@@ -171,17 +173,20 @@ i {
     justify-content: space-evenly;
     align-items: center;
 }
+
 .services-text {
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.services-text h3{
+
+.services-text h3 {
     margin: 0;
     font-size: 24px;
 }
-.services-text h4{
+
+.services-text h4 {
     margin: 0;
     font-size: 18px;
 }
@@ -195,4 +200,39 @@ i {
     align-items: center;
     border-radius: 25px;
     box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* sessão de ultimos trabalhos */
+
+.jobs-container {
+    background-color: var(--white);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.boxes-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    width: 280px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray);
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.25);
+    transition:200ms ease-out;
+}
+
+.box:hover {
+    transform: translate(0, -20px);
+    filter: brightness(1.1);
 }
