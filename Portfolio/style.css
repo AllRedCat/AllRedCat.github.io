@@ -240,3 +240,31 @@ i {
 }
 
 /* roda pé / area de contato */
+
+footer {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contacts a,
+.contacts h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--black);
+}
