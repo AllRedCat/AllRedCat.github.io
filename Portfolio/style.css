@@ -11,7 +11,7 @@
     --dark-gray: #404040;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -36,13 +36,15 @@ header {
     border-bottom: 2px solid var(--black);
     position: fixed;
     background-color: var(--light-gray);
+    z-index: 9999;
 }
 
 .logo-space {
     font-weight: 700;
     font-size: 24px;
 }
-.logo-space a{
+
+.logo-space a {
     font-size: 24;
     color: var(--black);
 }
@@ -87,6 +89,7 @@ h5 {
     align-items: center;
     height: 100vh;
     gap: 10rem;
+    scroll-snap-align: center;
 }
 
 .redcat {
@@ -300,7 +303,8 @@ footer {
     .about {
         width: 70%;
     }
-    .services-items{
+
+    .services-items {
         width: 80%;
     }
 }
