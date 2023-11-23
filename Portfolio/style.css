@@ -188,6 +188,8 @@ i {
 .services-text h4 {
     margin: 0;
     font-size: 18px;
+    text-align: justify;
+    letter-spacing: 3px;
 }
 
 .img-place {
@@ -290,4 +292,6 @@ footer {
     .services-items{
         width: 80%;
     }
+    .services{}
+    .services-text{}
 }
