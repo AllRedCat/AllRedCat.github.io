@@ -135,7 +135,6 @@ h5 {
 }
 
 .ilust-container {
-    /* width: 50%; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -154,7 +153,6 @@ i {
 /* parte dos serviços */
 
 .services-container {
-    /* padding: 55px; */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -267,4 +265,29 @@ footer {
     font-size: 20px;
     font-weight: 500;
     color: var(--black);
+}
+
+@media (max-width: 1210px) {
+    .boxes-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hi-container {
+        flex-direction: column;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about {
+        width: 70%;
+    }
+    .services-items{
+        width: 80%;
+    }
 }
