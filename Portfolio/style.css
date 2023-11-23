@@ -11,6 +11,10 @@
     --dark-gray: #404040;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'Quicksand', sans-serif;
     list-style: none;
@@ -292,6 +296,4 @@ footer {
     .services-items{
         width: 80%;
     }
-    .services{}
-    .services-text{}
 }
