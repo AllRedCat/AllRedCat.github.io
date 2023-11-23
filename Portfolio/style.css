@@ -33,11 +33,18 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border-bottom: 2px solid var(--black);
+    position: fixed;
+    background-color: var(--light-gray);
 }
 
 .logo-space {
     font-weight: 700;
     font-size: 24px;
+}
+.logo-space a{
+    font-size: 24;
+    color: var(--black);
 }
 
 ul {
