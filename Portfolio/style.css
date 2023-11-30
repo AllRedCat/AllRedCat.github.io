@@ -116,8 +116,8 @@ h5 {
 }
 
 .my-img {
-    width: 250px;
-    height: 250px;
+    width: 450px;
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -305,5 +305,12 @@ footer {
 
     .services-items {
         width: 80%;
+    }
+
+    .my-img {
+        display: none;
+    }
+    .my-img-2 {
+        display: none;
     }
 }
