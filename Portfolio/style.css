@@ -282,6 +282,19 @@ footer {
     color: var(--black);
 }
 
+/* swiper container */
+
+.swiper {
+    width: 600px;
+    height: 400px;
+    background-color: var(--light-blue);
+}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+
 @media (max-width: 1210px) {
     .boxes-container {
         display: flex;
@@ -310,6 +323,7 @@ footer {
     .my-img {
         display: none;
     }
+
     .my-img-2 {
         display: none;
     }
