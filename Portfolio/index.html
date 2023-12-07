@@ -1,146 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <script
-            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <title>Portfolio | RedCat</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <title>Portfolio | RedCat</title>
+</head>
 
-    <body>
-        <header>
-            <div class="logo-space">
-                <a href="#hi">RedCat</a>
+<body>
+    <header>
+        <div class="logo-space">
+            <a href="#hi">RedCat</a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about">Sobre</a>
+                </li>
+                <li>
+                    <a href="#services">Serviços</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfólio</a>
+                </li>
+                <li>
+                    <a href="#footer">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hi" class="hi-container">
+            <div class="hi">
+                <h5>Olá</h5>
+                <h2>Eu sou Gabriel</h2>
+                <div class="redcat">
+                    <h4>RedCat</h4>
+                    <span class="material-symbols-outlined line">
+                        minimize
+                    </span>
+                </div>
+                <div class="designer">
+                    <span class="material-symbols-outlined line">
+                        minimize
+                    </span>
+                    <h4>Designer</h4>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="#services">Serviços</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio">Portfólio</a>
-                    </li>
-                    <li>
-                        <a href="#footer">Contato</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="hi" class="hi-container">
-                <div class="hi">
-                    <h5>Olá</h5>
-                    <h2>Eu sou Gabriel</h2>
-                    <div class="redcat">
-                        <h4>RedCat</h4>
-                        <span class="material-symbols-outlined line">
-                            minimize
-                        </span>
-                    </div>
-                    <div class="designer">
-                        <span class="material-symbols-outlined line">
-                            minimize
-                        </span>
-                        <h4>Designer</h4>
-                    </div>
-                </div>
-                <div class="my-img">
-                    <!-- <span class="material-symbols-outlined img-box">
+            <div class="my-img">
+                <!-- <span class="material-symbols-outlined img-box">
                     check_box_outline_blank
                 </span> -->
-                    <img src="img/design illustration.svg">
-                </div>
-            </section>
-            <section id="about" class="about-container">
-                <div class="my-img-2">
-                    <!-- <span class="material-symbols-outlined img-box">
+                <img src="img/design illustration.svg">
+            </div>
+        </section>
+        <section id="about" class="about-container">
+            <div class="my-img-2">
+                <!-- <span class="material-symbols-outlined img-box">
                     check_box_outline_blank
                 </span> -->
-                    <img src="img/notebook.svg" width="400px">
+                <img src="img/notebook.svg" width="400px">
+            </div>
+            <div class="about">
+                <h2>Sobre mim</h2>
+                <div class="about-text">
+                    <h4>Sou Designer Gráfico e Web Designer, trabalho com
+                        soluções de Design para web sites e social
+                        mídia.</h4>
                 </div>
-                <div class="about">
-                    <h2>Sobre mim</h2>
-                    <div class="about-text">
-                        <h4>Sou Designer Gráfico e Web Designer, trabalho com
-                            soluções de Design para web sites e social
-                            mídia.</h4>
-                    </div>
-                    <div class="ilust-container">
+                <div class="ilust-container">
+                    <img src="img/vector.png" class="ilust">
+                    <i class="bi bi-code-slash"></i>
+                    <img src="img/design.png" class="ilust">
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services-container">
+            <div class="name-container">
+                <h2>Serviços</h2>
+            </div>
+            <div class="services-items">
+                <div class="services">
+                    <div class="img-place">
                         <img src="img/vector.png" class="ilust">
+                    </div>
+                    <div class="services-text">
+                        <h3>Design Gráfico</h3>
+                        <h4>Design para impulsionar o seu negócio no mercado</h4>
+                    </div>
+                </div>
+                <div class="services">
+                    <div class="img-place">
                         <i class="bi bi-code-slash"></i>
+                    </div>
+                    <div class="services-text">
+                        <h3>UI/UX Design</h3>
+                        <h4>Design de interface de experiência de usuário
+                            para aplicações</h4>
+                    </div>
+                </div>
+                <div class="services">
+                    <div class="img-place">
                         <img src="img/design.png" class="ilust">
                     </div>
-                </div>
-            </section>
-            <section id="services" class="services-container">
-                <div class="name-container">
-                    <h2>Serviços</h2>
-                </div>
-                <div class="services-items">
-                    <div class="services">
-                        <div class="img-place">
-                            <img src="img/vector.png" class="ilust">
-                        </div>
-                        <div class="services-text">
-                            <h3>Design Gráfico</h3>
-                            <h4>Design para impulsionar o seu negócio no mercado</h4>
-                        </div>
+                    <div class="services-text">
+                        <h3>WEB Design</h3>
+                        <h4>Design de paginas web para melhores sites para
+                            empresas e negócios</h4>
                     </div>
-                    <div class="services">
-                        <div class="img-place">
-                            <i class="bi bi-code-slash"></i>
-                        </div>
-                        <div class="services-text">
-                            <h3>UI/UX Design</h3>
-                            <h4>Design de interface de experiência de usuário
-                                para aplicações</h4>
-                        </div>
-                    </div>
-                    <div class="services">
-                        <div class="img-place">
-                            <img src="img/design.png" class="ilust">
-                        </div>
-                        <div class="services-text">
-                            <h3>WEB Design</h3>
-                            <h4>Design de paginas web para melhores sites para
-                                empresas e negócios</h4>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="portfolio" class="jobs-container">
-                <div class="name-container">
-                    <h2>Ultimos trabalhos</h2>
-                </div>
-                <!-- <div class="boxes-container">
-                <div class="box">Trabalho 1</div>
-                <div class="box">Trabalho 2</div>
-                <div class="box">Trabalho 3</div>
-            </div> -->
-            </section>
-        </main>
-        <footer id="footer">
-            <div class="footer-container">
-                <div class="footer-name">
-                    <h2>Contato</h2>
-                </div>
-                <div class="contacts">
-                    <a href="https://github.com/AllRedCat">GitHub</a>
-                    <a href="https://www.behance.net/gabrielfariag1">Behance</a>
-                    <h4>leonismogabriel@gmail.com</h4>
                 </div>
             </div>
-        </footer>
-    </body>
+        </section>
+        <section id="portfolio" class="jobs-container">
+            <div class="name-container">
+                <h2>Ultimos trabalhos</h2>
+            </div>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-name">
+                <h2>Contato</h2>
+            </div>
+            <div class="contacts">
+                <a href="https://github.com/AllRedCat">GitHub</a>
+                <a href="https://www.behance.net/gabrielfariag1">Behance</a>
+                <h4>leonismogabriel@gmail.com</h4>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const swiper = new Swiper('.swiper', {
+
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                lockClass: 'swiper-button-lock',
+            },
+        });
+    </script>
+</body>
 
 </html>
