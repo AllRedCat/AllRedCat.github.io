@@ -126,8 +126,15 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">
+                        <!-- Slide 1 -->
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- Slide 2 -->
+                        <!-- <iframe src="https://allredcat.github.io/Product-preview/" frameborder="0"
+                            class="frame"></iframe> -->
+
+                    </div>
                     <div class="swiper-slide">Slide 3</div>
                     ...
                 </div>
@@ -155,16 +162,29 @@
     <script>
         const swiper = new Swiper('.swiper', {
 
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
+            effect: 'creative',
+            creativeEffect: {
+                prev: {
+                    // will set `translateZ(-400px)` on previous slides
+                    translate: [0, 0, -400],
+                },
+                next: {
+                    // will set `translateX(100%)` on next slides
+                    translate: ['100%', 0, 0],
+                },
+            },
 
-            // If we need pagination
+            width: 400,
+            height: 300,
+            spaceBetween: 200,
+            direction: 'horizontal',
+            centeredSlides: true,
+            centeredSlidesBounds: true,
+
             pagination: {
                 el: '.swiper-pagination',
             },
 
-            // Navigation arrows
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
