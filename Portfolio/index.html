@@ -8,8 +8,9 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+
     <title>Portfolio | RedCat</title>
 </head>
 
@@ -121,29 +122,21 @@
             <div class="name-container">
                 <h2>Ultimos trabalhos</h2>
             </div>
-            <!-- Slider main container -->
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <!-- Slide 1 -->
+            <div class="jobs-items">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/Product-Preview.png" alt="slide-1" width="800"></div>
+                        <div class="swiper-slide"><img src="img/Register home page.png" alt="slide-2" width="800"></div>
+                        <div class="swiper-slide"><img src="img/QR code componen.png" alt="slide-3" width="800"></div>
+                        ...
                     </div>
-                    <div class="swiper-slide">
-                        <!-- Slide 2 -->
-                        <!-- <iframe src="https://allredcat.github.io/Product-preview/" frameborder="0"
-                            class="frame"></iframe> -->
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
 
-                    </div>
-                    <div class="swiper-slide">Slide 3</div>
-                    ...
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             </div>
         </section>
     </main>
@@ -161,34 +154,23 @@
     </footer>
     <script>
         const swiper = new Swiper('.swiper', {
-
-            effect: 'creative',
-            creativeEffect: {
-                prev: {
-                    // will set `translateZ(-400px)` on previous slides
-                    translate: [0, 0, -400],
-                },
-                next: {
-                    // will set `translateX(100%)` on next slides
-                    translate: ['100%', 0, 0],
-                },
-            },
-
-            width: 400,
-            height: 300,
-            spaceBetween: 200,
+            // Optional parameters
             direction: 'horizontal',
-            centeredSlides: true,
-            centeredSlidesBounds: true,
 
-            pagination: {
-                el: '.swiper-pagination',
-            },
-
+            // Navigation arrows
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
-                lockClass: 'swiper-button-lock',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            effect: 'coverflow',
+            coverflowEffect: {
+                rotate: 30,
+                slideShadows: false,
             },
         });
     </script>
