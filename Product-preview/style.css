@@ -94,7 +94,7 @@ button:hover {
     cursor: pointer;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 475px) {
     h2 {
         font-size: 32px;
     }

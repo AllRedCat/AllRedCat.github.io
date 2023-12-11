@@ -282,6 +282,19 @@ footer {
     color: var(--black);
 }
 
+/* swiper container */
+
+.swiper {
+    width: 800px;
+    height: 400px;
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 @media (max-width: 1210px) {
     .boxes-container {
         display: flex;
@@ -310,7 +323,23 @@ footer {
     .my-img {
         display: none;
     }
+
     .my-img-2 {
         display: none;
+    }
+
+    .swiper {
+        width: 360px;
+        height: 400px;
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            object-fit: cover;
+        }
     }
 }
