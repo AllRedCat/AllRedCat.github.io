@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Calculator App | Red Cat</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <div class="name">
+                    <p>
+                        calc
+                    </p>
+                </div>
+                <nav>
+                    <p>THEME</p>
+                    <table class="switch-table">
+                        <tr class="theme-numbers">
+                            <td class="theme-number-space">1</td>
+                            <td class="theme-number-space">2</td>
+                            <td class="theme-number-space">3</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="switch">
+                                <input type="checkbox" id="theme-toggle">
+                                <label for="theme-toggle"
+                                    class="theme-option first-option"
+                                    data-theme="first"></label>
+                                <label for="theme-toggle"
+                                    class="theme-option second-option"
+                                    data-theme="second"></label>
+                                <label for="theme-toggle"
+                                    class="theme-option third-option"
+                                    data-theme="third"></label>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- <div class="switch">
+                        <div class="switch-numbers">
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                        </div>
+                        <input type="checkbox" id="theme-toggle">
+                        <label for="theme-toggle"
+                            class="theme-option light-option"
+                            data-theme="light">1</label>
+                        <label for="theme-toggle"
+                            class="theme-option dark-option"
+                            data-theme="dark">2</label>
+                        <label for="theme-toggle"
+                            class="theme-option custom-option"
+                            data-theme="custom">3</label>
+                    </div>
+                </nav> -->
+                </header>
+                <input type="text" id="result" disabled>
+                <table class="calc-table">
+                    <tr>
+                        <td class="key-space"><input type="button" value="7"
+                                class="calc-buttons"
+                                onclick="appendToResult('7')"></td>
+                        <td class="key-space"><input type="button" value="8"
+                                class="calc-buttons"
+                                onclick="appendToResult('8')"></td>
+                        <td class="key-space"><input type="button" value="9"
+                                class="calc-buttons"
+                                onclick="appendToResult('9')"></td>
+                        <td class="key-space"><input type="button" value="DEL"
+                                class="calc-buttons reset-key"
+                                onclick="clearResult()"></td>
+                    </tr>
+                    <tr>
+                        <td class="key-space"><input type="button" value="4"
+                                class="calc-buttons"
+                                onclick="appendToResult('4')"></td>
+                        <td class="key-space"><input type="button" value="5"
+                                class="calc-buttons"
+                                onclick="appendToResult('5')"></td>
+                        <td class="key-space"><input type="button" value="6"
+                                class="calc-buttons"
+                                onclick="appendToResult('6')"></td>
+                        <td class="key-space"><input type="button" value="+"
+                                class="calc-buttons"
+                                onclick="appendToResult('+')"></td>
+                    </tr>
+                    <tr>
+                        <td class="key-space"><input type="button" value="1"
+                                class="calc-buttons"
+                                onclick="appendToResult('1')"></td>
+                        <td class="key-space"><input type="button" value="2"
+                                class="calc-buttons"
+                                onclick="appendToResult('2')"></td>
+                        <td class="key-space"><input type="button" value="3"
+                                class="calc-buttons"
+                                onclick="appendToResult('3')"></td>
+                        <td class="key-space"><input type="button" value="-"
+                                class="calc-buttons"
+                                onclick="appendToResult('-')"></td>
+                    </tr>
+                    <tr>
+                        <td class="key-space"><input type="button" value="."
+                                class="calc-buttons"
+                                onclick="appendToResult('.')"></td>
+                        <td class="key-space"><input type="button" value="0"
+                                class="calc-buttons"
+                                onclick="appendToResult('0')"></td>
+                        <td class="key-space"><input type="button" value="/"
+                                class="calc-buttons"
+                                onclick="appendToResult('/')"></td>
+                        <td class="key-space"><input type="button" value="x"
+                                class="calc-buttons"
+                                onclick="appendToResult('*')"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="key-space"><input type="button"
+                                value="RESET"
+                                class="calc-buttons reset-key"
+                                onclick="clearResult()"></td>
+                        <td colspan="2" class="key-space"><input type="button"
+                                value="="
+                                class="calc-buttons equal-key"
+                                onclick="calculateResult()"></td>
+                    </tr>
+                </table>
+            </main>
+        </body>
+    </html>
