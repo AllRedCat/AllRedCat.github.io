@@ -225,7 +225,8 @@ i {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 5rem;
     align-items: center;
 }
 
@@ -287,8 +288,8 @@ footer {
 /* swiper container */
 
 .swiper {
-    width: 800px;
-    height: 400px;
+    width: 1000px;
+    height: 600px;
 
     .swiper-slide {
         display: flex;
