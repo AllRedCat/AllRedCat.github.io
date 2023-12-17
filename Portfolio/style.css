@@ -6,8 +6,10 @@
     --red: #FF2E2E;
     --strong-orange: #FF5232;
     --light-blue: #5BFFB5;
-    --white: #E6E6E6;
-    --light-gray: #CCCCCC;
+    --white: #f7f7f7;
+    /* --white: #E6E6E6; */
+    /* --light-gray: #CCCCCC; */
+    --light-gray: #f7f7f7;
     --dark-gray: #404040;
 }
 
@@ -28,18 +30,18 @@ body {
     background-color: var(--white);
 }
 
-header {
-    width: 100vw;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    /* border-bottom: 2px solid var(--black); */
-    /* position: fixed; */
-    background-color: var(--light-gray);
-    /* z-index: 9999; */
-}
+/* header { */
+/* width: 100vw; */
+/* display: flex; */
+/* justify-content: space-evenly; */
+/* align-items: center; */
+/* border-bottom: 2px solid var(--black); */
+/* position: fixed; */
+/* background-color: var(--light-gray); */
+/* z-index: 9999; */
+/* } */
 
-.logo-space {
+/* .logo-space {
     font-weight: 700;
     font-size: 24px;
 }
@@ -47,7 +49,7 @@ header {
 .logo-space a {
     font-size: 24;
     color: var(--black);
-}
+} */
 
 ul {
     display: flex;
@@ -293,6 +295,12 @@ footer {
         justify-content: center;
         align-items: center;
     }
+}
+
+/*bootstrap add*/
+
+.navbar-collapse {
+    flex-grow: 0;
 }
 
 @media (max-width: 1210px) {
