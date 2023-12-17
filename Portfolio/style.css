@@ -299,9 +299,9 @@ footer {
 
 /*bootstrap add*/
 
-.navbar-collapse {
+/* .collapse .navbar-collapse {
     flex-grow: 0;
-}
+} */
 
 @media (max-width: 1210px) {
     .boxes-container {
@@ -314,10 +314,12 @@ footer {
 @media (max-width: 768px) {
     .hi-container {
         flex-direction: column;
+        height: 80vh;
     }
 
     .about-container {
         flex-direction: column;
+        height: 80vh;
     }
 
     .about {
