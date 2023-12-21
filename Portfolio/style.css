@@ -117,6 +117,17 @@ h5 {
     border-radius: 25px;
 }
 
+.button-space {
+    width: 100%;
+}
+
+.contact-btn {
+    width: 100%;
+    border: var(--strong-orange) solid;
+    padding: 5px;
+    margin: 5px;
+}
+
 .my-img {
     width: 450px;
     height: 450px;

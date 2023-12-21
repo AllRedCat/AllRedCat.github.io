@@ -77,7 +77,8 @@
                     <h4>Designer</h4>
                 </div>
                 <div class="button-space">
-                    <a href="contact.html">Contate-me</a>
+                    <!-- <a href="contact.html" class="contact-btn">Contate-me</a> -->
+                    <button id="myButton" class="contact-btn">Contate-me</button>
                 </div>
             </div>
             <div class="my-img">
@@ -206,6 +207,11 @@
                 slideShadows: false,
             },
         });
+    </script>
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "contact.html";
+        };
     </script>
 </body>
 
