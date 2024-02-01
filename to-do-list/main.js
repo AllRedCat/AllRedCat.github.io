@@ -1,8 +1,10 @@
-function addTask() {
+function addTask(event) {
+    event.preventDefault();
+    
     // Get input value
     var taskInput = document.getElementById("TaskInput");
     var taskText = taskInput.value;
- 
+    
     // If input is empty show a error message 
     if (taskText.trim() === "") { //'trim' remove the empty spaces from beginning and end of a string 
         alert("Please, insert a taks");
@@ -19,7 +21,7 @@ function addTask() {
 
     // Make checkbox as a child to newTask
     newTask.appendChild(checkboxInput);
-
+    
     // Add text to newTask
     newTask.appendChild(document.createTextNode(" " + taskText + " "));
 
@@ -38,5 +40,5 @@ function addTask() {
     taskList.appendChild(newTask);
 
     // Clean the input
-    taskInput.value = "";
+    taskInput.value = "";   
 }
