@@ -1,6 +1,6 @@
 function addTask(event) {
     event.preventDefault();
-    
+
     // Get input value
     var taskInput = document.getElementById("TaskInput");
     var taskText = taskInput.value;
@@ -18,10 +18,11 @@ function addTask(event) {
     // Add a checkbox to newTask
     var checkboxInput = document. createElement("input");
     checkboxInput.type = "checkbox";
-
+    checkboxInput.className = "checkbox";
+    
     // Make checkbox as a child to newTask
     newTask.appendChild(checkboxInput);
-    
+
     // Add text to newTask
     newTask.appendChild(document.createTextNode(" " + taskText + " "));
 
