@@ -11,7 +11,17 @@ function addTask() {
 
     // Create a new item
     var newTask = document.createElement("li");
-    newTask.textContent = taskText;
+    // newTask.textContent = taskText;
+
+    // Add a checkbox to newTask
+    var checkboxInput = document. createElement("input");
+    checkboxInput.type = "checkbox";
+
+    // Make checkbox as a child to newTask
+    newTask.appendChild(checkboxInput);
+
+    // Add text to newTask
+    newTask.appendChild(document.createTextNode(" " + taskText + " "));
 
     // Add a delete button
     var deleteButton = document.createElement("button"); // Create button
@@ -21,7 +31,7 @@ function addTask() {
     };
 
     // Make deleteButton as a child to newTask
-    newTask.appendChild(deleteButton);
+    newTask.appendChild(deleteButton);    
 
     // Add the new task to list
     var taskList = document.getElementById("TaskList");
