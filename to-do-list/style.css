@@ -17,4 +17,9 @@ body {
 ul {
     height: 200px;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: start;
+    padding: 0;
 }
